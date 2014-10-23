@@ -1,15 +1,29 @@
 #ifndef ___TTrainedDeepNetwork
 #define ___TTrainedDeepNetwork
 
+#include "TObject.h"
+#include "TMatrixD.h"
+#include "TVectorD.h"
+#include <math.h>
+
 // by Joshua Loyal (22-10-2014)
 
-class TTrainedDeepNetwork : public TObject
-{
-    public:
-        TTrainedDeepNetwork();
+namespace deepnet {
+    
+    class TLayer : public TObject
+    {
 
-    private:
-        ClassDef( TTrainedDeepNetwork, 1 )
-};
+    };
+
+    class TTrainedDeepNetwork : public TObject
+    {
+        public:
+            TTrainedDeepNetwork();
+
+        private:
+            ClassDef( TTrainedDeepNetwork, 1 )
+    };
+}
+
 
 #endif
